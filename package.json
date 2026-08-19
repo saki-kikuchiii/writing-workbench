@@ -1,0 +1,43 @@
+{
+  "name": "writing-workbench",
+  "version": "0.1.0",
+  "private": true,
+  "description": "執筆のための作業環境",
+  "license": "UNLICENSED",
+  "author": "Saki Kikuchi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saki-kikuchiii/writing-workbench.git"
+  },
+  "scripts": {
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check",
+    "lint": "textlint .",
+    "reset": "pnpm ci"
+  },
+  "devDependencies": {
+    "@textlint-ja/textlint-rule-preset-ai-writing": "1.7.0",
+    "lefthook": "2.1.10",
+    "oxfmt": "0.50.0",
+    "textlint": "15.8.0",
+    "textlint-rule-preset-ja-technical-writing": "12.0.2",
+    "textlint-rule-preset-jtf-style": "3.0.3"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "11.22.0",
+      "onFail": "warn"
+    },
+    "runtime": {
+      "name": "node",
+      "version": "24.19.0",
+      "onFail": "warn"
+    }
+  },
+  "engines": {
+    "node": "24.19.0",
+    "pnpm": "11.22.0"
+  },
+  "packageManager": "pnpm@11.22.0"
+}

@@ -1,0 +1,3 @@
+[mcp_servers.textlint]
+command = "npx"
+args = ["textlint", "--mcp"]
